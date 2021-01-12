@@ -1,15 +1,24 @@
 import { useEffect, useState } from "react";
 
-import "./styles.css";
+import Container from "./styles";
 
 const CONSTANTS = {
-  DELETING_SPEED: 30,
+  DELETING_SPEED: 50,
   TYPING_SPEED: 150,
+  BACK_DELAY: 2000,
 };
 
 interface OwnProps {
   messages: string[];
   heading: string;
+}
+
+interface State {
+  text: string;
+  message: string;
+  isDeleting: boolean;
+  loopNum: Number;
+  typingSpeed: typeof CONSTANTS.TYPING_SPEED;
 }
 
 const Typer = ({ messages, heading }: OwnProps) => {
@@ -22,7 +31,7 @@ const Typer = ({ messages, heading }: OwnProps) => {
   });
 
   useEffect(() => {
-    let timer = null;
+    let timer: NodeJS.Timeout;
     const handleType = () => {
       setState((cs) => ({
         ...cs, // means currentState
@@ -42,7 +51,7 @@ const Typer = ({ messages, heading }: OwnProps) => {
           ...cs,
           isDeleting: true,
         }));
-      }, 500);
+      }, CONSTANTS.BACK_DELAY);
     } else if (state.isDeleting && state.text === "") {
       setState((cs) => ({
         ...cs,
@@ -53,26 +62,26 @@ const Typer = ({ messages, heading }: OwnProps) => {
     }
   }, [state.text, state.message, state.isDeleting, messages]);
 
-  function getCurrentText(cs) {
+  function getCurrentText(cs: State) {
     return cs.isDeleting
       ? cs.message.substring(0, cs.text.length - 1)
       : cs.message.substring(0, cs.text.length + 1);
   }
 
-  function getMessage(cs, data) {
-    return data[Number(cs.loopNum) % Number(data.length)];
+  function getMessage(cs: State, messages: string[]) {
+    return messages[Number(cs.loopNum) % Number(messages.length)];
   }
 
-  function getTypingSpeed(cs) {
+  function getTypingSpeed(cs: State) {
     return cs.isDeleting ? CONSTANTS.TYPING_SPEED : CONSTANTS.DELETING_SPEED;
   }
 
   return (
-    <h1>
+    <Container>
       {heading}&nbsp;
       <span>{state.text}</span>
       <span id="typer-cursor" />
-    </h1>
+    </Container>
   );
 };
 

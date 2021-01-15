@@ -45,7 +45,7 @@ function App() {
 
   useEffect(() => {
     document.title = "Dedaldino Antonio (Software Engineer)";
-  });
+  }, []);
 
   return (
     <HashRouter>

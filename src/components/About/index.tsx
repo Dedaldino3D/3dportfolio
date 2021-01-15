@@ -28,20 +28,18 @@ const About = React.forwardRef<
         <img src={dedaimg} alt="Dedaldino image" />
       </Img>
       <AboutInfo data-aos="fade-left">
-        <h1>UI/UX Designer & Web Developer.</h1>
+        <h1>Full Stack Software Engineer</h1>
         <Description>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Description>
         <AboutStack>
           <ol>
-            <Stack>PhEmailone: email@example.com</Stack>
-            <Stack>Website: www.example.com</Stack>
-            <Stack>Phone: +123 456 7890</Stack>
+            <Stack>Email: dedaldinontonio7@gmail.com</Stack>
+            <Stack>Phone: +244 946334643</Stack>
           </ol>
           <ol>
-            <Stack>City: City : New York, USA</Stack>
-            <Stack>Degree: Master</Stack>
+            <Stack>City: Luanda, Angola</Stack>
             <Stack>Freelance: Available</Stack>
           </ol>
         </AboutStack>

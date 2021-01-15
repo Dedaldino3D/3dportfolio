@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HashRouter } from "react-router-dom";
 
@@ -42,6 +42,10 @@ function App() {
   const testRef = useRef<HTMLHeadingElement>(null);
   const servicesRef = useRef<HTMLHeadingElement>(null);
   const skillsRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    document.title = "Dedaldino Antonio (Software Engineer)";
+  });
 
   return (
     <HashRouter>

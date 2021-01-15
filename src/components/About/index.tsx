@@ -1,6 +1,6 @@
 import React from "react";
 
-import dedaimg from "../../images/3dimg.jpg";
+import dedaimg from "../../images/about_img.jpg";
 import {
   AboutContainer,
   Title,

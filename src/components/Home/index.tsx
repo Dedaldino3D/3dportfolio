@@ -1,5 +1,6 @@
-import  React, { useState } from "react";
+import React, { useState } from "react";
 
+import image from "../../images/3dimg.jpg";
 import Typer from "../Typer";
 import Testmonials from "../Testmonials";
 import Portfolio from "../Portfolio";
@@ -13,34 +14,44 @@ interface OwnProps {
   refs: any;
 }
 
-const InfoHome = React.forwardRef<HTMLDivElement, React.ComponentPropsWithoutRef<'div'>>((props, ref) => (
-<Info >
-          <div
-            className="hero-container"
-            data-aos="fade-in"
-            data-aos-delay="100"
-            ref={ref}
-          >
-            <h1>Dedaldino Antonio 3D</h1>
-            <Typer
-              heading="I'm"
-              messages={[
-                "Software Enginner",
-                "Backend Developer",
-                "Frontend Developer",
-                "Mobile Developer",
-                "Freelancer",
-              ]}
-            ></Typer>
-          </div>
-        </Info>
+const backgroundStyle = {
+  backgroundImage: `url(${image})`,
+  backgroundPosition: "top center",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+};
+
+const InfoHome = React.forwardRef<
+  HTMLDivElement,
+  React.ComponentPropsWithoutRef<"div">
+>((props, ref) => (
+  <Info style={{ ...backgroundStyle }}>
+    <div
+      className="hero-container"
+      data-aos="fade-in"
+      data-aos-delay="100"
+      ref={ref}
+    >
+      <h1>Dedaldino Antonio 3D</h1>
+      <Typer
+        heading="I'm"
+        messages={[
+          "Software Enginner",
+          "Backend Developer",
+          "Frontend Developer",
+          "Mobile Developer",
+          "Freelancer",
+        ]}
+      ></Typer>
+    </div>
+  </Info>
 ));
 
 const Home = ({ refs }: OwnProps) => {
   return (
     <>
       <HomeContainer id="main">
-        <InfoHome ref={refs.homeRef}/>
+        <InfoHome ref={refs.homeRef} />
         <About ref={refs.aboutRef} />
         <Skills ref={refs.skillsRef} />
         <Services ref={refs.servicesRef} />

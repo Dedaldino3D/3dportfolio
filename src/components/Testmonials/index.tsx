@@ -6,6 +6,8 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { Description, Title } from "../About/styles";
 import { TestimonialsContainer, TestiCard, ListTestimonials } from "./styles";
 import image from "../../images/back_3d.jpg";
+import renee_lowe from "../../images/renee_lowe.jpg";
+import jonathan from "../../images/jonathan_rowley.jpg";
 
 const Testmonials = React.forwardRef<
   HTMLHeadingElement,
@@ -85,8 +87,8 @@ const CarouselItems = [
       et. Maecen aliquam, risus at semper.
       <FaQuoteRight className="quote-icon-right" />
     </p>
-    <img src={image} alt="" />
-    <h3>Helena bulgoza</h3>
+    <img src={renee_lowe} alt="" />
+    <h3>Renee Lowe</h3>
     <h4>Store Owner</h4>
   </TestiCard>,
   <TestiCard data-aos="fade-up" data-aos-delay="300">
@@ -109,8 +111,8 @@ const CarouselItems = [
       et. Maecen aliquam, risus at semper.
       <FaQuoteRight className="quote-icon-right" />
     </p>
-    <img src={image} alt="" />
-    <h3>Marcela Aguillar</h3>
+    <img src={jonathan} alt="" />
+    <h3>Jonathan Rowley</h3>
     <h4>Entrepreneur</h4>
   </TestiCard>,
 ];

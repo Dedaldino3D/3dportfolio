@@ -72,6 +72,7 @@ export const Avatar = styled.img`
   border: 10px solid #2c2f3f;
   margin: 15px auto;
   display: block;
+  object-fit: cover;
 `;
 
 export const Menu = styled.nav`

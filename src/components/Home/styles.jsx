@@ -17,8 +17,6 @@ export const Info = styled.section`
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background: url("/static/media/3dimg.7f202043.jpg") top center;
-  background-size: cover;
 
   :before{
     content: "";

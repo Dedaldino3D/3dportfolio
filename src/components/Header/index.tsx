@@ -21,7 +21,7 @@ import {
   Menu,
 } from "./styles";
 
-import dedaimg from "../../images/3dimg.jpg";
+import dedaimg from "../../images/back_3d.jpg";
 
 interface OwnProps {
   refs: any;
@@ -29,7 +29,7 @@ interface OwnProps {
 
 const Header = ({ refs }: OwnProps) => {
   const location = useLocation();
-  console.log("refs: ", refs)
+  console.log("refs: ", refs);
 
   React.useEffect(() => {
     switch (location.pathname) {

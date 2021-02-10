@@ -8,6 +8,9 @@ import { TestimonialsContainer, TestiCard, ListTestimonials } from "./styles";
 import image from "../../images/back_3d.jpg";
 import renee_lowe from "../../images/renee_lowe.jpg";
 import jonathan from "../../images/jonathan_rowley.jpg";
+import a1 from "../../images/a1.jpg";
+import a3 from "../../images/a3.jpg";
+import a5 from "../../images/a5.jpg";
 
 const Testmonials = React.forwardRef<
   HTMLHeadingElement,
@@ -15,15 +18,15 @@ const Testmonials = React.forwardRef<
 >((props: any, ref) => {
   return (
     <TestimonialsContainer>
-      <Title ref={ref} style={{ margin: "0 10px" }}>
+      <Title ref={ref} style={{ margin: "10px", color: "var(--text)" }}>
         Testimonials
       </Title>
-      <Description style={{ padding: "0 10px" }}>
+      {/* <Description style={{ padding: "30px 10px" }}>
         Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
         aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
         quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
         sit in iste officiis commodi quidem hic quas.
-      </Description>
+      </Description> */}
       <ListTestimonials>
         <AliceCarousel items={CarouselItems} {...CarouselOptions} />
       </ListTestimonials>
@@ -58,62 +61,49 @@ const CarouselItems = [
   <TestiCard data-aos="fade-up">
     <p>
       <FaQuoteLeft className="quote-icon-left" />
-      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-      suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh
-      et. Maecen aliquam, risus at semper.
+      Sometimes people say that a company cannot be started by a single person,
+      but what they don't know is that if you have strength, resilience,
+      perseverance, you will go far, he helped me to create a company in such a
+      short time
       <FaQuoteRight className="quote-icon-right" />
     </p>
-    <img src={image} alt="" />
-    <h3>Denilson Gulgallar</h3>
+    <img src={jonathan} alt="" />
+    <h3>Jonathan Rowley</h3>
     <h4>CEO &amp; Founder</h4>
   </TestiCard>,
   <TestiCard data-aos="fade-up" data-aos-delay="100">
     <p>
       <FaQuoteLeft className="quote-icon-left" />
-      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-      suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh
-      et. Maecen aliquam, risus at semper.
+      I worked with dedaldino for a long time, and during that time I discovered
+      that computing is not just code.
       <FaQuoteRight className="quote-icon-right" />
     </p>
-    <img src={image} alt="" />
-    <h3>Ursula Von der Lein</h3>
-    <h4>Europe Comitee</h4>
+    <img src={a1} alt="" />
+    <h3>Keylane Gujo</h3>
+    <h4>Entreprenuer</h4>
   </TestiCard>,
   <TestiCard data-aos="fade-up" data-aos-delay="200">
     <p>
       <FaQuoteLeft className="quote-icon-left" />
-      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-      suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh
-      et. Maecen aliquam, risus at semper.
+      I thought there was a super problem in my system, so he solved the system
+      problem in record time.
       <FaQuoteRight className="quote-icon-right" />
     </p>
-    <img src={renee_lowe} alt="" />
-    <h3>Renee Lowe</h3>
+    <img src={a3} alt="" />
+    <h3>Salsa Herculano</h3>
     <h4>Store Owner</h4>
   </TestiCard>,
   <TestiCard data-aos="fade-up" data-aos-delay="300">
     <p>
       <FaQuoteLeft className="quote-icon-left" />
-      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-      suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh
-      et. Maecen aliquam, risus at semper.
+      A good programmer, the code is very organized, going according to software
+      standards DRY, KISS, DAO, etc. His code is not released for production
+      without a strong test (avoiding later headaches).
       <FaQuoteRight className="quote-icon-right" />
     </p>
-    <img src={image} alt="" />
-    <h3>Donald Trump</h3>
-    <h4>Freelancer</h4>
-  </TestiCard>,
-  <TestiCard data-aos="fade-up" data-aos-delay="400">
-    <p>
-      <FaQuoteLeft className="quote-icon-left" />
-      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-      suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh
-      et. Maecen aliquam, risus at semper.
-      <FaQuoteRight className="quote-icon-right" />
-    </p>
-    <img src={jonathan} alt="" />
-    <h3>Jonathan Rowley</h3>
-    <h4>Entrepreneur</h4>
+    <img src={a5} alt="" />
+    <h3>Robert Krizovsk</h3>
+    <h4>Software Engineer</h4>
   </TestiCard>,
 ];
 

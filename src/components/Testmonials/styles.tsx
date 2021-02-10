@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TestimonialsContainer = styled.section`
   padding: 20px 0;
-  background: var(--blue-light);
+  background: #f0f7f5;
   color: var(--white-100);
   min-height: 100vh;
 

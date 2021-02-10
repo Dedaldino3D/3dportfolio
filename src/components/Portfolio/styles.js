@@ -11,16 +11,16 @@ export const PortfolioContainer = styled.section`
 `;
 
 export const PortfolioCard = styled.div`
-  border-radius: 10px;
+  border-radius: 4px;
   overflow: hidden;
-  box-shadow: var(--bs-post);
+  box-shadow: var(--bs-ud);
   max-width: 300px;
   max-height: 300px;
   margin: 30px;
   transition: all 0.5s ease-out;
 
   :hover {
-    opacity: 0.5;
+    cursor: pointer;
     transition: all 0.5s ease-in-out;
   }
 

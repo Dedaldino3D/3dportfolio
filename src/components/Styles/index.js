@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { createGlobalStyle } from "styled-components";
 import AOS from "aos";
-import 'react-alice-carousel/lib/alice-carousel.css'
+import "react-alice-carousel/lib/alice-carousel.css";
+import "react-bnb-gallery/dist/style.css";
 import "aos/dist/aos.css";
 
 const Styles = createGlobalStyle`
@@ -31,10 +32,12 @@ const Styles = createGlobalStyle`
 	}
 	
 	body {
-		font: 400 14px/24px Roboto,'Noto Sans','Noto Sans JP','Noto Sans KR','Noto Naskh Arabic','Noto Sans Thai','Noto Sans Hebrew','Noto Sans Bengali', Arial, sans-serif;
+		font-size: 400 14px/24px;
+		font-family: "Inter", "Open Sans", Roboto, sans-serif;
 		background-color: var(--white-100);
 		/* color: #202124; */
 		color: var(--text);
+		line-height: 1.5;
 	}
 
 	body {

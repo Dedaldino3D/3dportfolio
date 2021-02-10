@@ -10,7 +10,7 @@ const Back = styled.div`
   height: 40px;
   border-radius: 50px;
   bottom: 15px;
-  right: 15px;
+  right: 40px;
   background: var(--blue);
   color: var(--white-100);
   transition: display 0.5s ease-in-out;

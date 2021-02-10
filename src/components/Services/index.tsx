@@ -31,10 +31,10 @@ const Services = React.forwardRef<
           <ServiceDesc>
             <h3>Database Management</h3>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Build a robust foundation at the database level that is essential
+              to developing applications and strategies. As your partner, I give
+              you confidence that your most valuable asset is always available,
+              secure and high performing.
             </p>
           </ServiceDesc>
         </Service>
@@ -45,24 +45,9 @@ const Services = React.forwardRef<
           <ServiceDesc>
             <h3>Software Development</h3>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
-          </ServiceDesc>
-        </Service>
-        <Service data-aos="fade-right" data-aos-delay="100">
-          <ServiceIcon>
-            <FaEthernet />
-          </ServiceIcon>
-          <ServiceDesc>
-            <h3>Network Archicteture</h3>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Design and development of a modern software as well as robust and
+              complex software for your business with ascending and safety
+              technologies
             </p>
           </ServiceDesc>
         </Service>
@@ -73,10 +58,10 @@ const Services = React.forwardRef<
           <ServiceDesc>
             <h3>Cloud Platform Support</h3>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Taking our services will receive a full cloud suppport on first
+              time using main infraestruture in the market, IaaS, PaaS or SaaS.
+              They are AWS (Amazon Web Service), GCP (Google Cloud Platform),
+              Azure, Heroku, DigitalOcean.
             </p>
           </ServiceDesc>
         </Service>
@@ -87,10 +72,9 @@ const Services = React.forwardRef<
           <ServiceDesc>
             <h3>API Design & Implementation</h3>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Design & Implementation of APIs(Application Programming
+              Interface), Monolithic systems, Serverless applications as well as
+              Microservices.
             </p>
           </ServiceDesc>
         </Service>
@@ -101,10 +85,9 @@ const Services = React.forwardRef<
           <ServiceDesc>
             <h3>Web & Mobile Apps</h3>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Development of mobile applications using new technologies for the
+              construction of complex and user friendly UI / UX framing the
+              brand and the needs of users
             </p>
           </ServiceDesc>
         </Service>

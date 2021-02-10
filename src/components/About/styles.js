@@ -25,7 +25,7 @@ export const Title = styled.h1`
   font-size: 32px;
   font-weight: 700;
   border-bottom: 3px solid var(--blue-70);
-  color: inherit;
+  color: var(--blue-link);
   padding-bottom: 14px;
   max-width: max-content;
 `;
@@ -57,7 +57,7 @@ export const AboutInfo = styled.div`
   h1 {
     font-size: 24px
     font-weight: 700;
-    color: var(--blue-bold);
+    color: var(--blue-link);
   }
 `;
 

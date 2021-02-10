@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { HashRouter } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 import Header from "../Header";
 import Home from "../Home";
-import BackTop from "../BackTop";
+// import BackTop from "../BackTop";
 import GlobalStyles from "../Styles";
 import { ButtonNav } from "../Home/styles";
 
@@ -12,27 +12,33 @@ interface Props {
   ref: any;
 }
 
-// const Button = React.forwardRef((props, ref) => {
-//   const [td, setTd] = useState(false);
-//   const toggle = () => {
-//     ref.current.style = "backgroud: #fff";
-//     setTd(!td);
-//   };
+const Button = (props: any) => {
+  const [td, setTd] = useState(false);
 
-//   return (
-//     <ButtonNav onClick={toggle} type="button" className="mobile-nav-toggle">
-//       {!td ? (
-//         <span>
-//           <FaBars />
-//         </span>
-//       ) : (
-//         <span>
-//           <FaTimes />
-//         </span>
-//       )}
-//     </ButtonNav>
-//   );
-// });
+  const toggle = () => {
+    if (!td) {
+      props.dref.current.style.left = 0;
+      setTd(true);
+    } else {
+      props.dref.current.style.left = "-300px";
+      setTd(false);
+    }
+  };
+
+  return (
+    <ButtonNav onClick={toggle} type="button" className="mobile-nav-toggle">
+      {!td ? (
+        <span>
+          <FaBars />
+        </span>
+      ) : (
+        <span>
+          <FaTimes />
+        </span>
+      )}
+    </ButtonNav>
+  );
+};
 
 function App() {
   const homeRef = useRef<HTMLElement>(null);
@@ -42,6 +48,7 @@ function App() {
   const testRef = useRef<HTMLHeadingElement>(null);
   const servicesRef = useRef<HTMLHeadingElement>(null);
   const skillsRef = useRef<HTMLHeadingElement>(null);
+  const ownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     document.title = "Dedaldino Antonio (Software Engineer)";
@@ -50,7 +57,7 @@ function App() {
   return (
     <HashRouter>
       <GlobalStyles />
-      {/* <Button ref={ref} /> */}
+      <Button dref={ownRef} />
       <Header
         refs={{
           aboutRef,
@@ -60,6 +67,7 @@ function App() {
           servicesRef,
           skillsRef,
           homeRef,
+          ownRef,
         }}
       />
       <Home
@@ -73,7 +81,7 @@ function App() {
           homeRef,
         }}
       />
-      <BackTop ref={homeRef} />
+      {/* <BackTop ref={homeRef} /> */}
     </HashRouter>
   );
 }

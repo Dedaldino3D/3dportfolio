@@ -29,7 +29,6 @@ interface OwnProps {
 
 const Header = ({ refs }: OwnProps) => {
   const location = useLocation();
-  console.log("refs: ", refs);
 
   React.useEffect(() => {
     switch (location.pathname) {
@@ -64,23 +63,23 @@ const Header = ({ refs }: OwnProps) => {
   };
 
   return (
-    <HeaderContainer>
+    <HeaderContainer ref={refs.ownRef}>
       <Avatar src={dedaimg} />
       <InfoHeader>
         <h1>Dealdino A. 3D</h1>
         <SocialInfo>
-          <span>
+          <a href="https://www.facebook.com/alinywayne" target="_blank">
             <FaFacebook />
-          </span>
-          <span>
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
             <FaTwitter />
-          </span>
-          <span>
+          </a>
+          <a href="https://linkedin.com" target="_blank">
             <FaLinkedinIn />
-          </span>
-          <span>
+          </a>
+          <a href="https://github.com/dedaldino3d" target="_blank">
             <FaGithub />
-          </span>
+          </a>
         </SocialInfo>
       </InfoHeader>
       <div>

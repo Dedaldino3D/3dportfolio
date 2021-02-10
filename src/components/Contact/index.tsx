@@ -46,12 +46,11 @@ const Contact = React.forwardRef<HTMLHeadingElement, OwnProps>((props, ref) => {
   return (
     <ContactContainer>
       <Title ref={ref}>Contact</Title>
-      <Description>
-        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-        sit in iste officiis commodi quidem hic quas.
-      </Description>
+      {/* <Description>
+        However, if you liked what you see here and want my help to help you
+        build, design and deploy your application, you can contact with these
+        channels.
+      </Description> */}
       <div>
         <InfoContact data-aos="fade-right" data-aos-offset="300">
           <ContactInfoCard>

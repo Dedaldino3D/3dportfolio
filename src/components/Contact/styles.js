@@ -91,13 +91,13 @@ export const Textarea = styled.textarea`
 export const Button = styled.button`
   border: none;
   border-radius: 25px;
-  background: var(--blue-400);
+  background: var(--green);
   color: var(--white);
   padding: 10px 15px;
   transition: all 0.5s ease-out;
 
   :hover {
-    background: var(--blue-bold);
+    background: #264653;
     transition: background 0.3s ease;
   }
 `;

@@ -47,12 +47,12 @@ const Skills = React.forwardRef<
   return (
     <SkillsContainer>
       <Title ref={ref}>Skills</Title>
-      <Description data-aos="fade-up">
+      {/* <Description data-aos="fade-up">
         Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
         aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
         quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
         sit in iste officiis commodi quidem hic quas
-      </Description>
+      </Description> */}
       <ListSkills>
         <Skill data-aos="fade-right" onClick={() => handleClick("activeMaD")}>
           <FaChevronRight />

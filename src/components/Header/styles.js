@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   position: fixed;
-  height: 100%;
+  height: 100vh;
   left: 0;
   top: 0;
   bottom: 0;
@@ -11,9 +11,10 @@ export const HeaderContainer = styled.header`
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #264653;
   color: #fff;
   overflow-y: auto;
+  box-shadow: var(--bs-xl);
 
   @media (max-width: 1188px) {
     left: -300px;
@@ -23,6 +24,8 @@ export const HeaderContainer = styled.header`
     display: flex;
     flex-direction: column;
     align-items: space-between;
+    justify-content: space-between;
+    height: calc(100vh - 280px);
   }
 `;
 
@@ -33,7 +36,7 @@ export const SocialInfo = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  & > span {
+  & a {
     cursor: pointer;
     padding: 8px;
     background: var(--blue-light);
@@ -99,7 +102,6 @@ export const Menu = styled.nav`
 
   a {
     font-size: 16px;
-    font-weight: 600;
     display: flex;
     align-items: center;
     color: var(--white-100);
